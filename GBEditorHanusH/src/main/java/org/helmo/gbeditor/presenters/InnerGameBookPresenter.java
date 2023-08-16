@@ -87,7 +87,8 @@ public class InnerGameBookPresenter {
      */
     public List<String> updateChoiceListView(ObservableList<String> oChoiceList) {
         oChoiceList.clear();
-        currentPage.clear();
+        if(currentPage!=null){
+        currentPage.clear();}
         mainPresenter.getChoices().clear();
         try (LibraryStorage storage = mainPresenter.getFactoryStorage().newStorage(mainPresenter.getUsers(), mainPresenter.getLibrary(), mainPresenter.getPages(), mainPresenter.getChoices())) {
             storage.loadChoice(currentPage);
@@ -165,7 +166,7 @@ public class InnerGameBookPresenter {
     }
 
     private void deletePageInDb(Page pageToDelete) {
-        deleteChoicePage(mainPresenter.getPages().getId(pageToDelete));
+        deleteChoicesPage(mainPresenter.getPages().getId(pageToDelete));
         updatePageDeleted(pageToDelete);
         deleteUniquePage(mainPresenter.getPages().getId(pageToDelete));
     }
@@ -178,7 +179,7 @@ public class InnerGameBookPresenter {
         }
     }
 
-    private void deleteChoicePage(int id) {
+    private void deleteChoicesPage(int id) {
         try (LibraryStorage storage = mainPresenter.getFactoryStorage().newStorage(mainPresenter.getUsers(), mainPresenter.getLibrary(), mainPresenter.getPages(), mainPresenter.getChoices())) {
             storage.deleteChoicePage(id);
             mainPresenter.setMessage("Choix de la page supprimer");

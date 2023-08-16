@@ -319,7 +319,7 @@ public class LibraryStorage implements AutoCloseable, ILibraryStorage {
     @Override
     public void publishGameBook(GameBook gb) {
         int id = library.getId(gb);
-        try (PreparedStatement stmt = connection.prepareStatement("UPDATE gamebook SET is_publish = 1 ,is_edited = 0 WHERE id_gamebook=?")) {
+        try (PreparedStatement stmt = connection.prepareStatement("UPDATE gamebook SET is_publish = 1 ,is_reedit = 0 WHERE id_gamebook=?")) {
             stmt.setInt(1, id);
             if (stmt.execute()) {
                 gb.setPublish(true);
