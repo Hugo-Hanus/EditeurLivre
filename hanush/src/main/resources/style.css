@@ -1,0 +1,41 @@
+Button{
+    -fx-min-height:20;
+}
+.delete{
+    -fx-background-color:#DF2935;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+.edit{
+    -fx-background-color:#FDCA40;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+.add{
+    -fx-background-color: #3772FF;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+.publish{
+    -fx-background-color:#3EC300;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+.republish{
+    -fx-background-color:#00A676;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+Label{
+    -fx-min-height:20;
+    -fx-font-size: 1.2em;
+    -fx-font-family:"Verdana Pro Black";
+}

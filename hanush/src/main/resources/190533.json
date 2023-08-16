@@ -1,0 +1,58 @@
+{
+    "library": {
+        "2-981890-20-4": {
+            "title": "Vous êtes Elon Musk: Un livre dont vous êtes le héros",
+            "isbn": "2-981890-20-4",
+            "resume": "La partie jeu consiste à jouer le rôle d'Elon Musk et à faire des choix tout au long de sa vie. Vous êtes Elon Musk! Certains choix ont été faits par Musk lui-même, tandis que d'autres choix peuvent vous mener, par exemple, à avoir une autre carrière, une aventure amoureuse, ou encore vous mener tout droit à l'hôpital et même à mourir... eh oui, c'est la vie!",
+            "userDTO": {
+                "firstname": "Steve Rioux",
+                "name": "Rioux"
+            }
+        },
+        "2-370115-73-4": {
+            "title": "Transe",
+            "isbn": "2-370115-73-4",
+            "resume": "Pourquoi vous trouvez-vous ici, quel est cet endroit et comment vous en échapper ?Un ennemi invisible, qui semble rôder à proximité, vous laisse des messages et des indices mystérieux, en rapport avec votre passé. Pour survivre et comprendre les raisons de votre enlèvement, vous devez franchir les nombreuses zones qui vous séparent de la sortie, tout en élucidant les énigmes placées sur votre chemin.",
+            "userDTO": {
+                "firstname": "M.I.A",
+                "name": "Prod"
+            }
+        },
+        "2-190533-01-5": {
+            "title": "Activité Intergrative",
+            "isbn": "2-190533-01-5",
+            "resume": "Est-ce que je peux résumer une activité intégrative à sas grille évaluation....Non je pense pas",
+            "userDTO": {
+                "firstname": "Hugo",
+                "name": "Hanus"
+            }
+        },
+        "2-075138-22-2": {
+            "title": "LA CREATURE VENUE DU CHAOS - UN LIVRE DONT VOUS ETES LE HEROS ",
+            "isbn": "2-075138-22-2",
+            "resume": "Peut-être, au cours de l'aventure, parviendrez-vous à contrôler votre tempérament bestial et, plus tard, à découvrir quel destin vous est réservé. Mais votre succès est loin d'être assuré : même une créature venue du Chaos peut succomber, elle aussi, aux innombrables pièges tendus par les monstres qui infestent le Défilé de la Dent-du-Troll...",
+            "userDTO": {
+                "firstname": "Steve",
+                "name": "Jackson"
+            }
+        },
+        "2-075168-69-5": {
+            "title": "Les Maîtres des tenèbres. Édition augmentée • Un Livre dont vous êtes le Héros",
+            "isbn": "2-075168-69-5",
+            "resume": "Les Maîtres des Ténèbres ont attaqué le Monastère Kaï, dans lequel de jeunes profiges tels que vous sont initiés à l'art de la guerre. Vous êtes le seul survivant de la bataille, et une mission vitale vous incombe désormais : avertir le Roi du Summerlund que les Maîtres des Ténèbres ont décimé l'élite guerrière du pays. Les ennemis qui ont juré votre perte feront tout pour vous en empêcher.",
+            "userDTO": {
+                "firstname": "John",
+                "name": "Dever"
+            }
+        },
+        "2-075097-28-3": {
+            "title": "L'Antre des Dragons • Un Livre dont vous êtes le Héros.",
+            "isbn": "2-075097-28-3",
+            "resume": "Un gigantesque dragon sème la ruine dans tout le royaume d'Avalon, allant jusqu'à menacer le Roi Arthur et sa cour. Les courageux chevaliers de la Table Ronde eux-mêmles sont impuissants. VOUS seul êtes capable de libérer le peuple de ce monstre terrifiant. Rien de plus simple ! Il vous suffit de partir à sa recherche et de le défier au coeur de son repaire. Oh, un dernier détail : saviez-vous que jamais personne n'est revenu vivant de l'Antre des Dragons ?",
+            "userDTO": {
+                "firstname": "J.H",
+                "name": "Brennan"
+            }
+        }
+    }
+}
