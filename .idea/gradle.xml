@@ -11,7 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/hanush" />
+            <option value="$PROJECT_DIR$/GBEditorHanusH" />
           </set>
         </option>
       </GradleProjectSettings>
