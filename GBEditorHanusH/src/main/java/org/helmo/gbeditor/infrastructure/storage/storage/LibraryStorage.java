@@ -227,10 +227,7 @@ public class LibraryStorage implements AutoCloseable, ILibraryStorage {
         return false;
     }
 
-    /**
-     * Add All Page of a GameBook in the database
-     * @param newGameBook Object GameBook
-     */
+    @Override
     public void addAllPageGameBook(GameBook newGameBook) {
         try (PreparedStatement stmt = connection.prepareStatement("INSERT INTO page(text,numero,id_gamebook) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS)) {
             for (Page page : newGameBook.getMapPage().values()) {
@@ -245,10 +242,7 @@ public class LibraryStorage implements AutoCloseable, ILibraryStorage {
         }
     }
 
-    /**
-     * Add All Choices present in a GameBook
-     * @param newGameBook Object GameBook
-     */
+    @Override
     public void addAllChoiceFromPage(GameBook newGameBook) {
         int idBook = library.getId(newGameBook);
         try (PreparedStatement stmt = connection.prepareStatement("INSERT INTO choix (id_page, texteChoix, id_page_1) VALUES ((SELECT DISTINCT p.id_page FROM page p WHERE p.numero = ? AND p.id_gamebook = ?),?,(SELECT DISTINCT p2.id_page FROM page p2 WHERE p2.numero = ? AND p2.id_gamebook = ?));", Statement.RETURN_GENERATED_KEYS)) {
@@ -311,15 +305,10 @@ public class LibraryStorage implements AutoCloseable, ILibraryStorage {
         }
     }
 
-    /**
-     * Publish GameBook int the DataBase
-     *
-     * @param gb Object GameBook
-     */
     @Override
     public void publishGameBook(GameBook gb) {
         int id = library.getId(gb);
-        try (PreparedStatement stmt = connection.prepareStatement("UPDATE gamebook SET is_publish = 1 ,is_edited = 0 WHERE id_gamebook=?")) {
+        try (PreparedStatement stmt = connection.prepareStatement("UPDATE gamebook SET is_publish = 1 ,is_reedit = 0 WHERE id_gamebook=?")) {
             stmt.setInt(1, id);
             if (stmt.execute()) {
                 gb.setPublish(true);
@@ -339,12 +328,7 @@ public class LibraryStorage implements AutoCloseable, ILibraryStorage {
         }
     }
 
-    /**
-     * Add Page if the number already Exist
-     *
-     * @param page       Objetc Page
-     * @param idGameBook Int id of the gameBook
-     */
+
     @Override
     public void addExistPage(Page page, int idGameBook) {
         int generated = 0;

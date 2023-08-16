@@ -144,10 +144,10 @@ public class InnerGameBookView implements IMainView.IInnerGameBookView {
                     clearFieldChoice(spinnerChoice, texteChoiceEntry);
                 });
             }
-            Button pageDeleteButton = new Button("Suppression du choix");
+            Button choiceDeleteButton = new Button("Suppression du choix");
             {
-                pageDeleteButton.getStyleClass().add("delete");
-                pageDeleteButton.setOnAction(action -> {
+                choiceDeleteButton.getStyleClass().add("delete");
+                choiceDeleteButton.setOnAction(action -> {
                     String element = choiceInList.getSelectionModel().getSelectedItem();
                     innerGameBookPresenter.deleteChoice(element);
                     oChoiceList = (ObservableList<String>) innerGameBookPresenter.updateChoiceListView(oChoiceList);
@@ -168,7 +168,7 @@ public class InnerGameBookView implements IMainView.IInnerGameBookView {
                 choix.getChildren().add(labelChoice);
                 choix.getChildren().add(spinnerChoice);
                 choix.getChildren().add(choiceAddButton);
-                choix.getChildren().add(pageDeleteButton);
+                choix.getChildren().add(choiceDeleteButton);
             }
             setLeft(listBox);
             setCenter(choix);

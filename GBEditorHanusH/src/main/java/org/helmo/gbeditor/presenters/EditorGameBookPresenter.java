@@ -42,7 +42,6 @@ public class EditorGameBookPresenter {
         if (!message.isEmpty()) {
             mainPresenter.setMessage(message);
         }
-
     }
 
     /**

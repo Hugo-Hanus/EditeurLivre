@@ -16,9 +16,9 @@ import java.util.Optional;
 public class MainView implements IMainView{
 
     private  MainPresenter mainPresenter;
-    private LoginView loginView=new LoginView();
-    private EditorView editorView=new EditorView();
-    private InnerGameBookView innerGameBookView = new InnerGameBookView();
+    private final LoginView loginView=new LoginView();
+    private final EditorView editorView=new EditorView();
+    private final InnerGameBookView innerGameBookView = new InnerGameBookView();
     private final Label messageH = new Label("Message : ");
     private final Label message = new Label("");
     private final Label user = new Label("Utilisateur : ");

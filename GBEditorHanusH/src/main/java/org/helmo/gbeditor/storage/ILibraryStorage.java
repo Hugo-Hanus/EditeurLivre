@@ -135,4 +135,14 @@ public interface ILibraryStorage extends AutoCloseable {
      * @param idChoice int ID of the choice
      */
     void deleteChoice(int idChoice);
+    /**
+     * Add All Page of a GameBook in the database
+     * @param newGameBook Object GameBook
+     */
+    void addAllPageGameBook(GameBook newGameBook);
+    /**
+     * Add All Choices present in a GameBook
+     * @param newGameBook Object GameBook
+     */
+    void addAllChoiceFromPage(GameBook newGameBook);
 }

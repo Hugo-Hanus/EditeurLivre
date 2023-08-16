@@ -35,12 +35,12 @@ public class MainPresenter {
      */
     public MainPresenter(IMainView mainView, LibraryRepository repository, FactoryStorage factoryStorage){
         this.view= mainView;
-        view.setPresenters(this);
         this.repository=repository;
         this.factoryStorage=factoryStorage;
-        loginPresenter=new LoginPresenter(mainView.getILoginView(),this);
-        editorPresenter = new EditorGameBookPresenter(mainView.getIEditorView(),this);
-        innerGameBookPresenter= new InnerGameBookPresenter(mainView.getInnerGameBookView(),this);
+        this.loginPresenter=new LoginPresenter(mainView.getILoginView(),this);
+        this.editorPresenter = new EditorGameBookPresenter(mainView.getIEditorView(),this);
+        this.innerGameBookPresenter= new InnerGameBookPresenter(mainView.getInnerGameBookView(),this);
+        view.setPresenters(this);
 
     }
 
