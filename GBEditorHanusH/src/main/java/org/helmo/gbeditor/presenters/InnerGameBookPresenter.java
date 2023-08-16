@@ -122,7 +122,7 @@ public class InnerGameBookPresenter {
 
     private void addPagetoInsert(Integer value, String text) {
         try (LibraryStorage storage = mainPresenter.getFactoryStorage().newStorage(mainPresenter.getUsers(), mainPresenter.getLibrary(), mainPresenter.getPages(), mainPresenter.getChoices())) {
-            Page newPage = new Page(text, value, new ArrayList<Choice>());
+            Page newPage = new Page(text, value, new ArrayList<>());
             storage.addExistPage(newPage, mainPresenter.getLibrary().getId(gameBook));
             mainPresenter.setMessage("Page ajouté");
         } catch (UnableToInsertInDb e) {
