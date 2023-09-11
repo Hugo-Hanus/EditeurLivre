@@ -14,16 +14,16 @@ public class MySQLConnection implements ConnectionData {
 
     @Override
     public String getUsername() {
-        return "in19b1143";
+        return "userDB";
     }
 
     @Override
     public String getPassword() {
-        return "5559";
+        return "Password";
     }
 
     @Override
     public String getDBPath() {
-        return"jdbc:mysql://192.168.128.13:3306/in19b1143?userSSL=false&serverTimezone=UTC";
+        return"jdbc:mysql://ipUserServeur?userSSL=false&serverTimezone=UTC";
     }
 }
